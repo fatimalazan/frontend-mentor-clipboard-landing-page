@@ -1,0 +1,228 @@
+body {
+    background: #FFFFFF url(/images/bg-header-mobile.png) top center no-repeat;
+}
+
+section { @include flex(column, 4rem); }
+
+.section-hero {
+    padding: 8.125rem 2rem 0 2rem; 
+
+    .page-heading {
+        @include flex(column, 1.375rem);
+        margin-top: .25rem;
+
+        .page-heading__title {
+            padding: 0 .8rem;
+        }       
+    }
+}
+
+.section-two {
+    padding: 9.6rem 2rem 0 2rem;
+
+    @include section-heading;
+
+    .section-two__info {
+        @include flex(column, 3.69rem);
+
+        img {
+            width: 100%;
+        }
+
+        .section-info {
+            @include flex(column, 3.8rem);
+
+            .section-info__texts {
+                @include flex(column, .75rem);
+            }
+        }
+    }
+}
+
+.section-three {
+    padding: 9.6rem 2rem 0 2rem;
+
+    @include section-heading;
+
+    img {
+        width: 100%;
+    }
+}
+
+.section-four {
+    padding: 9.6rem 2rem 0 2rem;
+
+    @include section-heading;
+
+    .section-info {
+        @include flex(column, 5rem);
+
+        .section-info__texts {
+            @include flex(column, .75rem);
+
+            img {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.partnerships {
+    @include flex(column, 4.125rem);
+    padding-top: 10.375rem;
+}
+
+.section-five {
+    padding: 10.375rem 2rem;
+
+    @include section-heading;
+}
+
+footer {
+    @include flex(column, 2.75rem);
+    padding: 3.25rem 2rem;
+    background-color: #F5F6F8;
+    font-size: 1.125rem;
+
+    img {
+        max-width: 55px;
+    }
+
+    .footer-menu {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        gap: 1.5rem;
+
+        a {
+            color: $heading-color;
+
+            &:hover {
+                color: $btn1-color;
+            }
+        }
+    }
+
+    .social-links {
+        @include flex(row, 1.56rem);
+
+        svg:hover path {
+            fill: $btn1-color;
+        }
+    }
+}
+
+.attribution {
+    padding: .6rem 0;
+    font-size: .8rem;
+}
+
+@include respond(sm-view) {
+    body {
+        background: #FFFFFF url(/images/bg-header-desktop.png) top center/1600px no-repeat;
+    }
+}
+
+@include respond(md-view) {
+    body {
+        background: #FFFFFF url(/images/bg-header-desktop.png) top center/1600px no-repeat;
+    }
+
+    .section-hero { 
+        padding-top: 8.125rem; 
+    
+        .page-heading {
+            width: 36rem;
+
+            .page-heading__title {
+                padding: 0;
+            }   
+        }
+    }
+
+    .section-two {
+        padding: 9.6rem 0 0 0;
+    
+        @include section-heading;
+    
+        .section-two__info {
+            @include flex(row, 0);
+    
+            img {
+                margin-left: -17rem;
+            }
+    
+            .section-info {
+                @include flex(column, 3.8rem);
+                align-items: start;
+                padding-left: 8rem;
+    
+                .section-info__texts {
+                    @include flex(column, .75rem);
+                    align-items: start;
+                    gap: .75rem;
+                    width: 22rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .section-three {
+        padding: 9.6rem 0 0 0;
+    
+        img {
+            width: auto;
+        }
+    }
+
+    .section-four {
+        padding: 9.6rem 9rem 0 9rem;
+    
+        .section-info {
+            @include flex(row, 0);
+    
+            .section-info__texts {
+                @include flex(column, .75rem);
+                flex: 1;
+    
+                img {
+                    margin-bottom: 2rem;
+                }
+
+                &:nth-child(2) {
+                    margin-bottom: 1.22rem;
+                }
+        
+                &:nth-child(3) {
+                    margin-bottom: 1.22rem;
+                }
+            }
+        }
+    }
+
+    .partnerships {
+        @include flex(row, 6rem);
+        justify-content: center;
+        padding-top: 10.375rem;
+    }
+
+    footer {
+        @include flex(row, 0);
+        padding: 3rem 10rem;
+        font-size: 1rem;
+    
+        .footer-menu {
+            display: grid;
+            grid-template-columns: repeat(3, 8rem);
+            grid-template-rows: auto;
+            gap: 1.4rem;
+            margin-left: 5.6rem;
+            text-align: left;
+        }
+    
+        .social-links {
+            margin-left: auto;
+        }
+    }
+
+}

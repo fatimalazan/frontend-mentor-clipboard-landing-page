@@ -1,0 +1,41 @@
+// MIXINS
+
+@mixin heading($heading-fontsize) {
+    font-size: $heading-fontsize;
+    color: $heading-color;
+}
+
+@mixin flex($flexdirection, $gapsize) {
+    display: flex;
+    flex-direction: $flexdirection;
+    justify-content: center;
+    align-items: center;
+    gap: $gapsize;
+}
+
+@mixin btn-shadow($color1, $color2) {
+    box-shadow: 0 10px 35px 0 $color1;
+    border-bottom: 4px solid darken($color2, 5%);
+}
+
+@mixin section-heading {
+    .section-heading {
+        @include flex(column, 1.316rem);
+
+        @include respond(md-view) {
+            width: 40rem;
+        }
+    }
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == sm-view {
+        @media only screen and (min-width: 768px) { @content };    //768px
+    }
+    @if $breakpoint == md-view {
+        @media only screen and (min-width: 1024px) { @content };    //1200px
+    }
+    @if $breakpoint == lg-view {
+        @media only screen and (min-width: 1440px) { @content };    //1440px
+    }
+}
