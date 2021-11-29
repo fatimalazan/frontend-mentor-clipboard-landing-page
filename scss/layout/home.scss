@@ -5,11 +5,10 @@ body {
 section { @include flex(column, 4rem); }
 
 .section-hero {
-    padding: 8.125rem 2rem 0 2rem; 
+    padding: 8rem 2rem 0 2rem; 
 
     .page-heading {
         @include flex(column, 1.375rem);
-        margin-top: .25rem;
 
         .page-heading__title {
             padding: 0 .8rem;
@@ -131,7 +130,7 @@ footer {
         padding-top: 8.125rem; 
     
         .page-heading {
-            width: 36rem;
+            width: 37rem;
 
             .page-heading__title {
                 padding: 0;

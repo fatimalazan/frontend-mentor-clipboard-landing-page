@@ -30,7 +30,7 @@ h1 {
   color: #4c545d; }
   @media only screen and (min-width: 1440px) {
     h1 {
-      font-size: 2.22rem;
+      font-size: 2.25rem;
       color: #4c545d; } }
 
 h2 {
@@ -96,7 +96,7 @@ img {
     opacity: 0.7; }
 
 body {
-  background: #FFFFFF url(/images/bg-header-mobile.png) top center no-repeat; }
+  background: #FFFFFF url("/images/bg-header-mobile.png") top center no-repeat; }
 
 section {
   display: flex;
@@ -106,14 +106,13 @@ section {
   gap: 4rem; }
 
 .section-hero {
-  padding: 8.125rem 2rem 0 2rem; }
+  padding: 8rem 2rem 0 2rem; }
   .section-hero .page-heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.375rem;
-    margin-top: .25rem; }
+    gap: 1.375rem; }
     .section-hero .page-heading .page-heading__title {
       padding: 0 .8rem; }
 
@@ -243,15 +242,15 @@ footer {
 
 @media only screen and (min-width: 768px) {
   body {
-    background: #FFFFFF url(/images/bg-header-desktop.png) top center/1600px no-repeat; } }
+    background: #FFFFFF url("/images/bg-header-desktop.png") top center/1600px no-repeat; } }
 
 @media only screen and (min-width: 1024px) {
   body {
-    background: #FFFFFF url(/images/bg-header-desktop.png) top center/1600px no-repeat; }
+    background: #FFFFFF url("/images/bg-header-desktop.png") top center/1600px no-repeat; }
   .section-hero {
     padding-top: 8.125rem; }
     .section-hero .page-heading {
-      width: 36rem; }
+      width: 37rem; }
       .section-hero .page-heading .page-heading__title {
         padding: 0; }
   .section-two {
