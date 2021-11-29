@@ -14,7 +14,7 @@ This is a solution to the [Clipboard Landing Page challenge on Frontend Mentor](
   - [Continued Development](#continued-development)
   - [Useful Resources](#useful-resources)
 - [Author](#author)
-- - [Acknowledgment](#acknowledgment)
+- [Acknowledgment](#acknowledgment)
 
 ## Overview
 
